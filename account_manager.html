@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quản lý tài khoản sinh viên</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ 
+ <body>
+
+    <div class="header_bar"></div>
+    <div class="page">
+        <header>
+          <div class="header-container">
+            <img class="logo" src="./favicon.ico" />
+            <h1>PTIT S-LINK</h1>
+          </div>
+        </header>
+        <div class="body">
+          <nav class="menu">
+            <div class="menu-item ">
+              <span>Quản lý kỳ thi</span>
+            </div>
+            <div class="menu-item active">
+              <span>Quản lý sinh viên</span>
+            </div>
+            <div class="menu-item">
+              <span>Thống kê</span>
+            </div>
+          </nav>
+          <!-- <main></main> -->
+        </div>
+      </div>
+     <main class="table" id="studentAcc_table">
+         <section class="table__header">
+             <h1>Tài khoản sinh viên</h1>
+             <div class="button-container">
+                <button class="plus-button" id="plus-button">+</button>
+                <!-- <button id="refresh-button" class="refresh-button" ><img src="images/refresh-2-xxl.png" alt=""></button> -->
+             
+             </div>
+             
+         </section>
+
+<!-- Thân bảng -->         
+         <section class="table__body">
+             <table id="dataTable">
+                <!-- Các cột -->
+
+
+                 <thead>
+                     <tr>
+                         <th> MSV </th>
+                         <th> Họ tên </th>
+                         <th> Email </th>
+                         <th> Mật khẩu </th>
+                         <th> Thao tác</th>
+                      
+                     </tr>
+                 </thead>
+
+
+                 <!-- Các hàng -->
+
+
+
+                 <tbody>
+                 </tbody>
+             </table>
+         </section>
+     </main>
+
+
+
+     <!-- pop up them sinh vien  -->
+     <div class="container">
+        <button class="close-button" id="close-button">X</button>
+        <div class="input-form">   
+            <input id="id" type="text" placeholder="Mã sinh viên" />
+            <input id="name" type="text" placeholder="Họ tên" />
+            <input id="email" type="email" placeholder="Email" />
+            <input id="password" type="password" placeholder="Mật khẩu" />
+            <button class="btnThem" id="btnThem">Thêm</button>
+        </div>
+     </div>
+     
+
+<!-- pop up Sửa thông tin  sinh vien  -->
+     <div class="container-edit" id="container-edit">
+        <button class="close-button" id="close-button1">X</button>
+        <div class="input-form">   
+            <input id="id-edit" type="text" placeholder="Mã sinh viên" />
+            <input id="name-edit" type="text" placeholder="Họ tên" />
+            <input id="email-edit" type="email" placeholder="Email" />
+            <input id="password-edit" type="text" placeholder="Mật khẩu" />
+            <button class="btnThem" id="btnSua" onclick="Xacnhansua()">Xác nhận</button>
+        </div>
+     </div>
+
+
+
+     <script src="script.js"></script>
+ 
+ </body>
+ 
+ </html>
